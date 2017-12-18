@@ -2,7 +2,7 @@
 #1
 class BankAccount
   #2
- @@interest_rate = 0.02
+ @@interest_rate = 0.01
  #3
  @@accounts = []
  def self.show_accounts
@@ -15,18 +15,16 @@ class BankAccount
  def balance
    return @balance
  end
- def balance=(balance)
-   @balance = balance
+ def balance=(tbalance)
+   @balance = tbalance
  end
  #5
  def deposit(amount)
-   puts amount.class
-   puts balance.class
-   balance += amount
+   @balance += amount
  end
  #6
  def withdraw(amount)
-   balance -= amount
+   @balance -= amount
  end
  #7
  def self.create
@@ -47,14 +45,6 @@ class BankAccount
  end
 end
 
-# BankAccount.create
-# BankAccount.create
-# BankAccount.create
-#
-# p BankAccount.show_accounts
-# BankAccount.interest_time
-# p BankAccount.show_accounts
-# p BankAccount.total_funds
 my_account = BankAccount.create
 your_account = BankAccount.create
 puts my_account.balance # 0
