@@ -1,3 +1,4 @@
+![Bitmaker](https://github.com/johncarlolopez/bitmaker-reference/blob/master/bitmakerlogo.svg)
 # 02 - Object Oriented Programming: Class Methods and Class Variables
 ### Monday, Dec 18th
 
